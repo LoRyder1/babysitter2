@@ -4,6 +4,10 @@ class BabySitterPay
     @bedtime = 22
   end
 
+  def pay
+    (12*waking_hours) + (8*midnight_hours) + (16*morning_hours)
+  end
+
   def valid?
     valid_schedule?
   end
