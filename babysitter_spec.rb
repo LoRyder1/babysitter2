@@ -34,4 +34,8 @@ describe 'BabySitterPay' do
   it 'count hours to midnight' do
     expect(@sitting.midnight_hours).to eq 2
   end
+
+  it 'count hours after midnight' do
+    expect(@sitting.morning_hours).to eq 4
+  end
 end
